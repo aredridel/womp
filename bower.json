@@ -1,0 +1,8 @@
+{
+  "name": "womp",
+  "dependencies": {
+    "dustjs-linkedin-helpers": "^1.1.1",
+    "dustjs-linkedin": "^2.0.3",
+    "requirejs": "^2.1.11"
+  }
+}
