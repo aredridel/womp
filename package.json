@@ -18,7 +18,8 @@
     "kraken-js": "^1.0.1",
     "less": "^1.7.3",
     "localizr": "^0.1.0",
-    "requirejs": "^2.1.14"
+    "requirejs": "^2.1.14",
+    "typescript-require": "^0.2.6"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

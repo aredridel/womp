@@ -1,5 +1,6 @@
 'use strict';
 
+require('typescript-require');
 
 var kraken = require('kraken-js'),
     app = require('express')(),
