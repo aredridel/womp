@@ -13,7 +13,9 @@
     "express": "^4.3.0",
     "kraken-devtools": "^1.0.0",
     "kraken-js": "^1.0.1",
-    "localizr": "^0.1.0"
+    "localizr": "^0.1.0",
+    "react": "^0.11.1",
+    "react-intl": "0.1.0-rc-1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
