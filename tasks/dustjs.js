@@ -11,9 +11,9 @@ module.exports = function dustjs(grunt) {
 	        files: [
 	            {
 	                expand: true,
-	                cwd: 'tmp/',
+	                cwd: 'public',
 	                src: '**/*.dust',
-	                dest: '.build/templates',
+	                dest: '.build',
 	                ext: '.js'
 	            }
 	        ],
