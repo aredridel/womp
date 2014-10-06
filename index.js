@@ -14,7 +14,10 @@ var kraken = require('kraken-js'),
 
 app.use(kraken(options));
 
+module.exports = app;
 
-app.listen(port, function (err) {
-    console.log('[%s] Listening on http://localhost:%d', app.settings.env, port);
-});
+if (!module.parent) {
+    app.listen(port, function (err) {
+        console.log('[%s] Listening on http://localhost:%d', app.settings.env, port);
+    });
+}

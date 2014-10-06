@@ -16,8 +16,7 @@
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",
-                        "specialization": "config:specialization",
-                        "i18n": "config:i18n"
+                        "specialization": "config:specialization"
                     }
                 ]
             }
@@ -38,8 +37,7 @@
                         "template": {
                             "module": "kraken-devtools/plugins/dustjs",
                             "files": "/templates/**/*.js",
-                            "base": "templates",
-                            "i18n": "config:i18n"
+                            "base": "templates"
                         },
                         "css": {
                             "module": "kraken-devtools/plugins/less",
