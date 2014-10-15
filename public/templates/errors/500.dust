@@ -1,6 +1,8 @@
 {>"layouts/master" /}
 
 {<body}
-    <h1>{@pre type="content" key="header"/}</h1>
-    <p>{@pre type="content" key="description"/}</p>
+    {@useContent bundle="errors/500.properties"}
+        <h1>{@pre type="content" key="header"/}</h1>
+        <p>{@pre type="content" key="description"/}</p>
+    {/useContent}
 {/body}

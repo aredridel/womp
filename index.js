@@ -14,6 +14,23 @@ var kraken = require('kraken-js'),
 
 app.use(kraken(options));
 
+var spud = require('spud');
+var fs = require('fs');
+var path = require('path');
+var dust = require('dustjs-linkedin');
+var root = path.resolve(__dirname, 'locales/US/en/');
+require('dust-usecontent-helper').withLoader(function(bundle, cb) {
+    fs.readFile(path.resolve(root, bundle), 'utf-8', function(err, data) {
+        if (err) {
+            return cb(err);
+        } else {
+            cb(null, spud.parse(data));
+        }
+    });
+}).registerWith(dust);
+
+require('dust-message-helper');
+
 module.exports = app;
 
 if (!module.parent) {
