@@ -29,7 +29,7 @@ require('dust-usecontent-helper').withLoader(function(bundle, cb) {
     });
 }).registerWith(dust);
 
-require('dust-message-helper');
+require('dust-message-helper').registerWith(dust);
 
 module.exports = app;
 
