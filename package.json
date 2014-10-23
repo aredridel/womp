@@ -5,6 +5,7 @@
   "author": "womp",
   "main": "index.js",
   "scripts": {
+    "build": "browserify -t reactify -t browserify-spud-bundle testreact.jsx > .build/main.js",
     "test": "grunt test",
     "start": "node index.js"
   },
@@ -16,10 +17,14 @@
     "dustjs-linkedin": "^2.4.0",
     "engine-munger": "^0.2.0",
     "express": "^4.3.0",
+    "intl": "^0.1.4",
     "kraken-devtools": "^1.0.0",
     "kraken-js": "^1.0.1",
     "less": "^1.7.3",
     "localizr": "^0.1.0",
+    "react": "^0.11.2",
+    "react-intl": "^1.0.0",
+    "reactify": "^0.14.0",
     "requirejs": "^2.1.14",
     "spud": "minimal"
   },

@@ -5,3 +5,5 @@
         <h1>{@pre type="content" key="greeting" /}</h1>
     {/useContent}
 {/body}
+
+<script src=/main.js></script>
