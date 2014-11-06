@@ -58,7 +58,15 @@
             }
         },
 
-        
+        "locale": {
+            "priority": 95,
+            "enabled": true,
+            "module": {
+                "name": "express-bcp47",
+                "arguments": [{ "defaultLocale": "en-US", "vary": true }]
+            }
+        },
+
         "expressView": {
             "priority": 100,
             "enabled": true,
