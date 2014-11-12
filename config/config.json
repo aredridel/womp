@@ -63,6 +63,15 @@
             }
         },
 
+        "makaraBrowserify": {
+            "priority": 100,
+            "enabled": true,
+            "module": {
+                "name": "makara-browserify",
+                "method": "middleware"
+            }
+        },
+
         "fileNotFound": {
             "enabled": true,
             "priority": 130,

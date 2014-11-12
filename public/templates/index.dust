@@ -3,3 +3,6 @@
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
 {/body}
+
+<script src='{makara.languagePackPath}'></script>
+<script src=/js/app.js></script>
