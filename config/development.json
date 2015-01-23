@@ -34,11 +34,6 @@
                     "path:./public",
                     "path:./.build",
                     {   
-                        "template": {
-                            "module": "kraken-devtools/plugins/dustjs",
-                            "files": "/templates/**/*.js",
-                            "base": "templates"
-                        },
                         "css": {
                             "module": "kraken-devtools/plugins/less",
                             "files": "/css/**/*.css"
