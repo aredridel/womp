@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{locale.langtag.language.language}-{locale.langtag.region}">
 <head>
     <meta charset="utf-8" />
     <title>{+title /}</title>

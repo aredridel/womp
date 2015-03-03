@@ -5,7 +5,7 @@
   "author": "womp",
   "main": "index.js",
   "scripts": {
-    "build": "grunt build",
+    "prepublish": "grunt build",
     "test": "grunt test",
     "start": "node index.js"
   },
@@ -16,6 +16,7 @@
     "dustjs-linkedin": "^2.4.0",
     "express": "^4.3.0",
     "express-bcp47": "^2.0.0",
+    "intl": "^0.1.4",
     "kraken-devtools": "^1.0.0",
     "kraken-js": "^1.0.1",
     "less": "^1.7.3",

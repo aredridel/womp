@@ -2,6 +2,9 @@
 
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
+
+    <div id='hereyougo'>
+    </div>
 {/body}
 
 <script src='{makara.languagePackPath}'></script>
