@@ -11,7 +11,9 @@ module.exports = function (router) {
 
     router.get('/', function (req, res) {
         
-        res.render('index', model);
+        req.app.render('index', model, function (e, s) {
+            res.send(s);
+        });
         
     });
 

@@ -9,9 +9,14 @@
         "dust": {
             "module": "engine-munger",
             "renderer": {
-                "method": "js",
+                "method": "dust",
                 "arguments": [
-                    { "cache": true },
+                    {
+                        "cache": true,
+                        "helpers": [
+                            "./lib/helpers.js"
+                        ]
+                    },
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",
@@ -25,7 +30,12 @@
             "renderer": {
                 "method": "js",
                 "arguments": [
-                    { "cache": true },
+                    {
+                        "cache": true,
+                        "helpers": [
+                            "./lib/helpers.js"
+                        ]
+                    },
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",
