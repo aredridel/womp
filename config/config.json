@@ -1,48 +1,45 @@
 {
 
     "express": {
+        "views": "path:.build/templates",
         "view cache": false,
-        "view engine": "dust"
+        "view engine": "js"
     },
 
     "view engines": {
         "dust": {
-            "module": "engine-munger",
+            "module": "makara",
             "renderer": {
-                "method": "js",
+                "method": "dust",
                 "arguments": [
-                    { "cache": true },
-                    {
-                        "views": "config:express.views",
-                        "view engine": "config:express.view engine",
-                        "specialization": "config:specialization"
-                    }
+                    { "cache": true, "helpers": "config:dust.helpers" }
                 ]
             }
         },
         "js": {
-            "module": "engine-munger",
+            "module": "makara",
             "renderer": {
                 "method": "js",
                 "arguments": [
-                    { "cache": true },
-                    {
-                        "views": "config:express.views",
-                        "view engine": "config:express.view engine",
-                        "specialization": "config:specialization"
-                    }
+                    { "cache": true, "helpers": "config:dust.helpers" }
                 ]
             }
         }
     },
-    
+
+    "dust": {
+        "helpers": [
+            "dust-makara-helpers"
+        ]
+    },
 
     "i18n": {
         "contentPath": "path:./locales",
         "fallback": "en-US"
     },
-    
-    
+
+    "specialization": {
+    },
 
     "middleware": {
 
@@ -63,7 +60,13 @@
             "priority": 100,
             "enabled": true,
             "module": {
-                "name": "engine-munger/lib/expressView"
+                "name": "makara",
+                "arguments": [
+                    {
+                        "i18n": "config:i18n",
+                        "specialization": "config:specialization"
+                    }
+                ]
             }
         },
         
