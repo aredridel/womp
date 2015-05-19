@@ -5,8 +5,7 @@
   "author": "womp",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test",
-    "start": "node index.js"
+    "test": "grunt test"
   },
   "dependencies": {
     "adaro": "^0.1.5",
