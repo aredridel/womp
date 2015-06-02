@@ -1,5 +1,7 @@
 'use strict';
 
+
+require('long-stack-traces');
 var express = require('express');
 var kraken = require('kraken-js');
 

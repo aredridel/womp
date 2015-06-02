@@ -41,5 +41,6 @@
     "css": "less",
     "js": "requirejs",
     "task": "grunt"
-  }
+  },
+  "fail": "file:/"
 }
