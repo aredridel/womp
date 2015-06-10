@@ -21,7 +21,7 @@
     "middleware": {
 
         "devtools": {
-            "enabled": true,
+            "enabled": false,
             "priority": 35,
             "module": {
                 "name": "kraken-devtools",
