@@ -42,6 +42,14 @@
     },
 
     "middleware": {
+        "bcp47": {
+            "priority": 10,
+            "enabled": true,
+            "module": {
+                "name": "express-bcp47",
+                "arguments": [ { "defaultLocale": "en-US", "vary": true } ]
+            }
+        },
 
         "static": {
             "module": {

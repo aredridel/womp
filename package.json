@@ -10,6 +10,7 @@
   "dependencies": {
     "dust-makara-helpers": "^4.0.0-7",
     "express": "^4.3.0",
+    "express-bcp47": "^3.0.1",
     "kraken-devtools": "^1.0.0",
     "kraken-js": "^1.0.1",
     "less": "^1.7.3",
